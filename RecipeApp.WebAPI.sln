@@ -13,9 +13,41 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "RecipeApp.Presentation", "R
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "RecipeApp.Service", "RecipeApp.Service", "{FF413459-C704-4F89-BAFD-22B67D84326B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecipeApp.Aplication", "RecipeApp.Aplication\RecipeApp.Aplication.csproj", "{D62B6B75-A4E8-40E3-A4B0-41D0CB9100F4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecipeApp.Domain", "RecipeApp.Domain\RecipeApp.Domain.csproj", "{4B626686-53A8-4BEC-B2DA-D698A3BBDABF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{2535DD3E-FC76-4BF4-9A6D-AB454F4D0419}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecipeApp.Infra.Data", "RecipeApp.Infra.Data\RecipeApp.Infra.Data.csproj", "{46788FAA-1C65-4688-9475-79FEDCD74290}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D62B6B75-A4E8-40E3-A4B0-41D0CB9100F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D62B6B75-A4E8-40E3-A4B0-41D0CB9100F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D62B6B75-A4E8-40E3-A4B0-41D0CB9100F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D62B6B75-A4E8-40E3-A4B0-41D0CB9100F4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4B626686-53A8-4BEC-B2DA-D698A3BBDABF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4B626686-53A8-4BEC-B2DA-D698A3BBDABF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4B626686-53A8-4BEC-B2DA-D698A3BBDABF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4B626686-53A8-4BEC-B2DA-D698A3BBDABF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{46788FAA-1C65-4688-9475-79FEDCD74290}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46788FAA-1C65-4688-9475-79FEDCD74290}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{46788FAA-1C65-4688-9475-79FEDCD74290}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{46788FAA-1C65-4688-9475-79FEDCD74290}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D62B6B75-A4E8-40E3-A4B0-41D0CB9100F4} = {C9A85901-6C3A-43C4-8607-68F92FBEAB0B}
+		{4B626686-53A8-4BEC-B2DA-D698A3BBDABF} = {844DF6B8-EA06-4F9A-A6EA-D7DE43A2CC8C}
+		{2535DD3E-FC76-4BF4-9A6D-AB454F4D0419} = {0B0F5C9C-DA80-43F5-8421-65D536D98B9A}
+		{46788FAA-1C65-4688-9475-79FEDCD74290} = {2535DD3E-FC76-4BF4-9A6D-AB454F4D0419}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {267FFE2D-FE9E-4DF0-AE5A-E05ADF25A917}
