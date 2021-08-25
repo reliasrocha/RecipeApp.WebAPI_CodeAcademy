@@ -6,6 +6,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Recipe.Infra.IoC.Data;
 
 namespace Recipe.Service.WebAPI
 {
@@ -13,7 +14,10 @@ namespace Recipe.Service.WebAPI
     {
         public static void Main(string[] args)
         {
-            CreateHostBuilder(args).Build().Run();
+            CreateHostBuilder(args)
+                .Build()
+                .DbSeedData()
+                .Run();
         }
 
         public static IHostBuilder CreateHostBuilder(string[] args) =>

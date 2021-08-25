@@ -1,4 +1,7 @@
-﻿using System;
+﻿using Microsoft.Extensions.DependencyInjection;
+using RecipeApp.Presentation.ConsoleApp.Configurations;
+using System;
+
 
 namespace RecipeApp.Presentation.ConsoleApp
 {
@@ -6,7 +9,11 @@ namespace RecipeApp.Presentation.ConsoleApp
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var services = ServicesExtensions.RegisterServices();
+
+            var serviceProvider = services.BuildServiceProvider();
+
+            serviceProvider.GetService<StartUp>().Run(args);
         }
     }
 }

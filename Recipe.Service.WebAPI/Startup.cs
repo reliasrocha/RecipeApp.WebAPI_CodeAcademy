@@ -11,6 +11,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using RecipeApp.Infra.Data;
+using RecipeApp.Infra.IoC;
 
 namespace Recipe.Service.WebAPI
 {
@@ -28,6 +30,7 @@ namespace Recipe.Service.WebAPI
         {
 
             services.AddControllers();
+            services.AddApiConfigurations(_config);
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "Recipe.Service.WebAPI", Version = "v1" });
