@@ -15,12 +15,12 @@ namespace RecipeApp.Infra.Data.Repositories
         TEntity GetById(int id);
         TEntity Update(TEntity obj);
     }
-    public class Repository<TEntity> : IRepository<TEntity> where TEntity : class
+    public class RepositoryS<TEntity> : IRepository<TEntity> where TEntity : class
     {
         protected readonly RecipeDbContext context;
         protected DbSet<TEntity> DbSet;
 
-        public Repository(RecipeDbContext context)
+        public RepositoryS(RecipeDbContext context)
         {
             this.context = context;
             DbSet = context.Set<TEntity>();

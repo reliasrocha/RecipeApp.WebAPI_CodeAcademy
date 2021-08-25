@@ -1,7 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using RecipeApp.Domain.Model;
 using RecipeApp.Domain.Models;
 using RecipeApp.Infra.Data;
 using System;
@@ -43,11 +42,9 @@ namespace RecipeApp.Infra.IoC.Data
             {
                 Name = "Roberto Rocha",
                 BirthDate = new DateTime(1987, 02, 16),
-                UserAdmin = new User()
-                {
-                    UserName = "rrocha",
-                    Password = "12345"
-                }
+                UserName = "rrocha",
+                Password = "12345",
+
             };
 
             var recipe01 = new Recipe()
@@ -80,11 +77,9 @@ namespace RecipeApp.Infra.IoC.Data
             {
                 Name = "Joana",
                 BirthDate = new DateTime(2000, 05, 15),
-                UserAdmin = new UserAdmin()
-                {
-                    UserName = "jsantos",
-                    Password = "12345"
-                }
+                UserName = "jsantos",
+                Password = "12345"
+
             };
 
             var recipe03 = new Recipe()
@@ -93,7 +88,7 @@ namespace RecipeApp.Infra.IoC.Data
                 Duration = "15 min",
                 Owner = joana
             };
-                       
+
             var soup = new Category()
             {
                 Name = "Sopa"
@@ -103,7 +98,7 @@ namespace RecipeApp.Infra.IoC.Data
             list.Add(recipe01);
             list.Add(recipe02);
             list.Add(recipe03);
-            
+
             return list;
         }
     }

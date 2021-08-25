@@ -30,7 +30,7 @@ namespace Recipe.Service.WebAPI
         {
 
             services.AddControllers();
-            services.AddApiConfigurations(_config);
+            services.AddApiConfigurations(Configuration);
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "Recipe.Service.WebAPI", Version = "v1" });
